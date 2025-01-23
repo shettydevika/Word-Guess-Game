@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const words = ["javascript", "python", "coding", "developer", "frontend"];
+    const words = ["javascript", "python", "coding", "developer", "frontend", "security", "structure", "algorithms", "allignments"];
     const maxAttempts = 7;
   
     let wordToGuess = "";
