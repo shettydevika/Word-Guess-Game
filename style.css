@@ -1,0 +1,126 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6f86d6, #48c6ef);
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  #instructions {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  #shuffled-word {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  #word-display {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+  
+  #input-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  input[type="text"] {
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 70px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+  
+  button {
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #48c6ef;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #6f86d6;
+    transform: scale(1.1);
+  }
+  
+  #message {
+    font-size: 1.3rem;
+    margin-top: 20px;
+  }
+  
+  .correct {
+    color: #4caf50;
+    font-weight: bold;
+    animation: correct-glow 0.5s ease-in-out;
+  }
+  
+  .incorrect {
+    color: #f44336;
+    font-weight: bold;
+    animation: incorrect-shake 0.5s ease-in-out;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Animations */
+  @keyframes correct-glow {
+    0%, 100% {
+      text-shadow: 0 0 10px #4caf50, 0 0 20px #4caf50;
+    }
+    50% {
+      text-shadow: 0 0 20px #4caf50, 0 0 30px #4caf50;
+    }
+  }
+  
+  @keyframes incorrect-shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-10px);
+    }
+    75% {
+      transform: translateX(10px);
+    }
+  }
+  
