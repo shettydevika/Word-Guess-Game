@@ -26,6 +26,9 @@ This project is an interactive word guessing game where players try to guess a s
    
 ## Screenshots  
 ### Gameplay View  
-![Gameplay Screenshot](./assets/gameplay-screenshot.png)  
+![Gameplay Screenshot](./assets/s1.png)  
+![Gameplay Screenshot](./assets/s2.png)
+![Gameplay Screenshot](./assets/s3.png)
+![Gameplay Screenshot](./assets/s4.png)
 
 
